@@ -1,10 +1,10 @@
 const supertest = require("supertest");
 const baseurl = "https://reqres.in";
 
-describe('test suite name', () => {
+describe('Req res teseting', () => {
     it('GET', async() => {
         const response = await supertest(baseurl)
-        .get("/api/users/2/");
+        .get("/api/users/2");
         console.log(response.status);
         console.log(response.body);
     });
